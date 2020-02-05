@@ -124,7 +124,7 @@ export default function Footer() {
             </div>
 
             <div className="text-center">
-                <p>2020 Wavcloud. All Rights Reserved </p>
+                <p className="copyright">2020 Wavcloud. All Rights Reserved </p>
             </div>
         </footer>
     

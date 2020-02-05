@@ -41,7 +41,7 @@ const setStarter = () => {
 							src="images/menu.png" className="nav-link img-hover"
 						/>
 							<div className="dropdown-menu d-hover second" style={{paddingTop:"20px"}}>
-								<div className="bg-white">
+								<div className="bg-white purple">
 									<a className="dropdown-item scroll" href="#models">Beatstore/Instrumentals</a>
 									<a className="dropdown-item scroll" href="#pricing">StudioFind</a>
 									<a className="dropdown-item" href="about.html">My Profile</a>

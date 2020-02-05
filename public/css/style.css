@@ -206,9 +206,9 @@ a.navbar-brand img {
 .dropdown-item:focus,
 .dropdown-item.active,
 .dropdown-item:active {
-    color: #fb4386;
+    color: #9F59BE;
     text-decoration: none;
-    background-color: #f0f0f1;
+    background: transparent;
 }
 
 /*-- /nav.navbar.second --*/
@@ -423,11 +423,11 @@ p.para-bottom-wthree {
 
 .icon-button-w3 i {
     font-size: 3.5em;
-    color: #fe3859;
-    background: -webkit-linear-gradient(#ffc845, #fe3859);
-    background: -o-linear-gradient(#ffc845, #fe3859);
-    background: -moz-linear-gradient(#ffc845, #fe3859);
-    background: linear-gradient(to left, #6488f9, #fb4386);
+    color: #9F59BE;
+    background: -webkit-linear-gradient(#ffc845, #9F59BE);
+    background: -o-linear-gradient(#ffc845, #9F59BE);
+    background: -moz-linear-gradient(#ffc845, #9F59BE);
+    background: linear-gradient(to left, #6488f9, #9F59BE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -668,7 +668,7 @@ p.sub-meta {
 /* //Pricing*/
 /* footer */
 footer {
-    background: #212020;
+    background: #4F4F4F;
 }
 
 .footer-title {
@@ -1776,5 +1776,14 @@ color: #FFFFFF;
 .number {
 font-size: 12px;
 color: #FFFFFF;
+}
+
+.purple {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.copyright {
+    color: #fff !important;
 }
 /* //responsive */
