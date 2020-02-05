@@ -21,6 +21,7 @@ body a {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 body a:hover {
@@ -29,12 +30,15 @@ body a:hover {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
+    font-family: 'Poppins', sans-serif;
     -ms-transition: 0.5s all;
 }
 
 body a:focus,
 a:hover {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 input[type="button"],
@@ -63,7 +67,7 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -73,7 +77,7 @@ p {
     letter-spacing: 1px;
     line-height: 1.9;
     color: #999;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul,
@@ -156,7 +160,7 @@ a.navbar-brand img {
     color: #fff;
     font-size: 15px;
     letter-spacing: 2px;
-    padding: 0;
+    padding: 10px;
     margin: 0 1em;
     font-weight: 600;
 }
@@ -168,9 +172,14 @@ a.navbar-brand img {
 }
 
 .dropdown-menu {
-    margin: 0;
+    left: 30px;
+    padding-top: 20px;
+    display: block;
+    margin-left: 30px;
     padding: 0;
     min-width: 53rem;
+    margin: 0 !important;
+    background: none;
 }
 
 .dropdown-menu.second {
@@ -270,45 +279,7 @@ nav.navbar.shrink .navbar-toggler {
 
 /*-- //nav.navbar.second --*/
 
-/* //hearder */
 
-/* header social */
-
-.header-social-w3ls ul li {
-    display: inline-block;
-}
-
-.header-social-w3ls ul li a i {
-    height: 35px;
-    width: 35px;
-    font-size: 15px;
-    line-height: 2.2;
-    background: none;
-    text-align: center;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    color: #fff;
-    border-radius: 50%;
-}
-
-.header-social-w3ls ul li a i.fa-facebook {
-    background: #3b5998;
-}
-
-.header-social-w3ls ul li a i.fa-twitter {
-    background: #55acee;
-}
-
-.header-social-w3ls ul li a i.fa-google-plus {
-    background: #e53935;
-}
-
-/* //header social */
-
-/* //header */
 
 /* banner */
 
@@ -426,9 +397,13 @@ h3.title-wthree {
 }
 
 h3.title-wthree span {
-    display: block;
-    font-size: 42px;
-    color: #fb4386;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #333333;
 }
 
 p.para-bottom-wthree {
@@ -476,14 +451,6 @@ p.para-bottom-wthree {
     -ms-transition: 0.5s all;
 }
 
-.card-body:hover {
-    background: #f7f6f6;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
 
 .right-models .card-body i,
 .subscribe-info-w3l i {
@@ -702,20 +669,22 @@ p.sub-meta {
 /* footer */
 footer {
     background: #212020;
-    border-radius: 0 250px 0 0;
 }
 
 .footer-title {
-    font-size: 23px;
+    font-style: normal;
     font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 13px;
+    line-height: 19px;
 }
 
 .footer-text p,
 .contact-info p,
 ul.links li a {
-    color: #ababab;
-    font-size: 14px;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+color: #FFFFFF;
 }
 
 .contact-info p span {
@@ -1590,9 +1559,222 @@ button.contact-submit {
     position: absolute;
     width: 24px;
     height: 24px;
-    left: 94px;
+    left: 78px;
     top: 156px;
 
 }
 
+
+.studybackground {
+    background-image: url(../images/SplashScreen.png);
+    background-size: cover !important;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0px auto;
+    background-color: #fff;
+  
+  }
+
+  
+.decision-none {
+    display: none;
+    margin-left: 30px;
+  }
+  
+.d-hover{
+    display: none;
+}
+.d-hover:hover{
+    display: block;
+}
+.fix-it:hover div{
+    display: block;
+}
+ .img-hover:hover + div{
+      display: block;
+  }
+
+  .beatstore {
+    margin-right: 26px;
+    padding: 11px 28px;
+    border: none;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.4);
+    font-family: "Poppins";
+    cursor: pointer;
+  }
+
+  .beatstore:focus {
+      outline: none;
+  }
+
+  .headphone {
+    padding-right: 13px;
+    padding-bottom: 2px;
+  }
+
+  .icon-drop {
+    padding-left: 8px;
+  }
+
+  .search-button {
+    padding-right: 13px;
+    padding-bottom: 2px;
+  }
+
+  .top-padding {
+    padding-top: 3rem;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    height: 400px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #9F59BE !important;
+}
+
+
+
+.widthy {
+    width: 280px;
+    border: none !important;
+    background: #F2F2F2;
+border-radius: 20px;
+}
+
+.imaging {
+ width: 280px !important;
+height: 198px;
+border-radius: 20px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    margin-right: 2rem !important;
+    
+}
+
+.title {
+font-size: 20px;
+line-height: 24px;
+text-align: left;
+color: #000000;
+}
+
+.star-ish {
+    width: 90px !important;
+    padding-top: 10px;
+}
+
+.amount {
+ font-size: 10px !important;
+line-height: 15px;
+text-align: left !important;
+color: #000000;
+padding-top: 10px !important;
+
+}
+
+.uploaded {
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+text-align: left;
+padding-bottom: 20px;
+
+
+}
+
+.play-it {
+    position: absolute;
+    text-align: center;
+    left: 48%;
+    top: 25%;
+    width: 10% !important;
+}
+
+.footer-up {
+    background: #333333;
+    height: 31vh;
+}
+
+.bigger{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.smaller {
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: #FFFFFF;
+}
+
+.pad-up{
+    padding-left: 10px !important;
+}
+
+.pad-it {
+    padding-top: 20px;
+} 
+
+
+.email-it {
+    padding: 10px;
+    width: 426px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.side-right {
+    position: absolute;
+    right:0px;
+}
+
+
+.wave-image {
+    margin-top: -6px !important;
+}
+
+
+.google-up{
+    padding-top: 8px;
+}
+
+.middle {
+    position: absolute;
+    left: 0;
+}
+
+
+.follower {
+    margin-top: 1.5rem !important;
+}
+
+
+.pad-right {
+    padding-right: 5px !important;
+} 
+
+.number {
+font-size: 12px;
+color: #FFFFFF;
+}
 /* //responsive */

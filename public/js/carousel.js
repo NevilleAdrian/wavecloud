@@ -21,12 +21,6 @@ $('#myCarousel').on('slide.bs.carousel', function (e) {
     }
 });
 
-
-//   $('#myCarousel').carousel({ 
-//                 interval: 2000
-//         });
-
-
   $(document).ready(function() {
 /* show lightbox when clicking a thumbnail */
     $('a.thumb').click(function(event){
