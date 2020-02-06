@@ -333,7 +333,7 @@ p.banner-para-wthree {
 .button-style {
     padding: 11px 28px;
     border: none;
-    color: #fff;
+    color: #fff !important;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -348,6 +348,12 @@ p.banner-para-wthree {
     border-radius: 30px;
 }
 
+.button-style:hover {
+    color: #000 !important;
+    background: #fff;
+    border: 1px solid #FFFFFF;
+} 
+
 .button-style:focus {
     border: none;
     outline: none;
@@ -358,15 +364,13 @@ p.banner-para-wthree {
     outline: none;
 }
 
-.button-style-login:hover{
-    color: #fff;
-}
+
 
 
 .button-style-login {
     padding: 11px 28px;
     border: none;
-    color: #fff;
+    color: #fff !important;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -382,10 +386,8 @@ p.banner-para-wthree {
 }
 
 
-.button-style:hover {
-    background: #fff;
-    color: #000;
-}
+
+
 
 /* //button style */
 
@@ -1741,6 +1743,12 @@ color: #FFFFFF;
     height: 45px;
     background: #FFFFFF;
     border-radius: 10px;
+    font-family: poppins;
+    font-size: 13px;
+}
+
+.email-it:focus{
+    outline: none;
 }
 
 .side-right {
@@ -1786,4 +1794,126 @@ color: #FFFFFF;
 .copyright {
     color: #fff !important;
 }
-/* //responsive */
+
+.background-image {
+    background-image: url(../images/Vector.png);
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.pad-login {
+    padding-top: 4px !important;
+    padding-left: 35%;
+}
+
+.pad-account {
+    padding-top: 60px !important;
+}
+
+
+
+.login-right {
+        padding-right: 10px !important;
+}
+
+.login {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+
+.resized {
+padding-top: 20px;
+}
+
+.resized-right {
+    padding-top: 20px;
+    position: absolute;
+    right: 170px;
+}
+
+.resized-p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.input-box {
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;    
+
+}
+
+
+.input--style-3{
+    background: #E8E8E8;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 550px;
+    margin-top: 10px;
+}
+
+.input--style-3:focus {
+    outline: none;
+}
+
+.push-up {
+    padding-top: 20px;
+}
+
+.forgot {
+font-size: 10px;
+line-height: 15px;
+color: #9F59BE;
+}
+
+
+.login-button {
+    padding: 15px;
+    width: 550px;
+    background: #9F59BE;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-button:focus {
+    outline: none; 
+}
+
+.beat {
+    display: block;
+    padding-bottom: 90px;
+}
+
+.beat-none {
+    display: none;
+}
+
+.what {
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.beat-store-padding {
+    text-align: left;
+    padding-top: 29px;
+}

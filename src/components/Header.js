@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,7 +20,7 @@ const setStarter = () => {
 	   <div class="main-banner-w3ls">
       <header>
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
-				<a className="navbar-brand" href="index.html">
+				<a className="navbar-brand" >
           <img src="images/WAVCLOUD.png" className="logo img-fluid" alt=""/>
 				</a>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup"
@@ -29,10 +30,10 @@ const setStarter = () => {
 				<div className="collapse navbar-collapse navbar-toggle " id="navbarNavAltMarkup">
 					<ul className="navbar-nav mx-lg-auto" style={{paddingRight: "180px"}}>
 						<li>
-							<a className="nav-link active" href="index.html">Home</a>
+							<Link className="nav-link active"  to="/" >Home</Link>
 						</li>
 						<li>
-							<a className="nav-link" href="about.html">About Us</a>
+						      <Link className="nav-link"  to="/about" >About</Link>
 						</li>
 
 						<li className="nav-item dropdown fix-it">
@@ -44,7 +45,7 @@ const setStarter = () => {
 								<div className="bg-white purple">
 									<a className="dropdown-item scroll" href="#models">Beatstore/Instrumentals</a>
 									<a className="dropdown-item scroll" href="#pricing">StudioFind</a>
-									<a className="dropdown-item" href="about.html">My Profile</a>
+									<a className="dropdown-item" >My Profile</a>
 								</div>
 							   </div>
 						</li>
@@ -53,10 +54,10 @@ const setStarter = () => {
 							<img src="images/search.png" className="nav-link "/>
 						</li>
 						<li>
-							<a className="nav-link" href="gallery.html">Blog</a>
+						     <Link className="nav-link"  to="/blog" >Blog</Link>
 						</li>
 						<li>
-							<a className="nav-link" href="contact.html">Contact Us</a>
+						    <Link className="nav-link"  to="/contact" >Contact</Link>
 						</li>
 					</ul>
 					
@@ -69,8 +70,8 @@ const setStarter = () => {
 				<div className="banner-text-size-w3ls">
 					<p className="mt-3 mb-5 banner-para-wthree">
 						Let’s Hear It</p>
-					<a href="about.html" className="btn button-style">Register</a>
-					<a href="about.html" className="btn button-style-login">Login</a>
+					<a className="btn button-style">Register</a>
+					<a  className="btn button-style-login">Login</a>
 				</div>
 				
 			</div>
