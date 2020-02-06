@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
@@ -120,9 +120,46 @@ const upload = [
     amount: "$112"
     },
 ];
+
+const categories = [
+  {
+    id: 1,
+    name: "Hip Hop/ Trap"
+  },
+  {
+    id: 2,
+    name: "Afro Beat"
+  },
+  {
+    id: 2,
+    name: "House"
+  },
+  {
+    id: 4,
+    name: "R & B"
+  },
+  {
+    id: 5,
+    name: "EDM/ Electronic"
+  },
+]
 export default function Wavecloud() {
-    
+  const [beat, setBeat]= useState()
+
+  const beatStore = () => {
+    document.getElementById("store").style.display = "none";
+    document.getElementById("find").style.display = "none";
+     setBeat(true)
+  }
+  
+  const [name, setName] = useState()
+  
+  const genre = () => {
+    document.getElementById("cat").style.display = "none";
+    setName(true)
+  }
     return (
+     
         <div className="banner-bottom-agile text-center">
 		<div className="py-xl-5 py-lg-3">
 			<div className="mb-lg-5 mb-sm-4 mb-3">
@@ -130,12 +167,31 @@ export default function Wavecloud() {
 				  <span className="mt-2 text-uppercase font-weight-bold">What’s On Wavcloud</span>
                   </h3>
 			</div>
-                <button className="beatstore"><span>
+                <button id="store" onClick={beatStore} className="beatstore">
+                  <span>
                     <img className="headphone" src="images/Group.png" ></img>
                       </span>Beatstore
                     <img className="icon-drop" src="images/Polygon.png"></img>
                  </button>
-                 <button className="beatstore"><span>
+
+                 <div className={beat ? "beat container" : "beat-none"}>
+                  <h3 className="what">What will you like to hear?</h3>
+                  <div className="row" id="cat">
+                  {categories.map((category) => (
+                      <div className="beat-store-padding">
+                      <button onClick={genre} className="beatstore">
+                       {category.name}
+                     </button>
+                      </div>
+                  ))}
+                  </div>             
+                 </div>
+                <div className={name ?"beat": "beat-none"}>
+                <button>hey</button>
+                </div>
+                 
+
+                 <button id="find" className="beatstore"><span>
                     <img className="search-button" src="images/groupsearch.png" ></img>
                       </span>Studiofind
                     <img className="icon-drop" src="images/Polygon.png"></img>
