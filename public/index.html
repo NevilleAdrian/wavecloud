@@ -10,7 +10,7 @@
       content="Web site created using create-react-app"
     />
     
-    <link href="css/style.css" rel="stylesheet" />
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -29,7 +29,13 @@
     <!-- //Meta tag Keywords -->
   
     <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/glider.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
     <!-- Bootstrap-Core-CSS -->
     <!-- Style-CSS -->
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -41,6 +47,7 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
      rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Great+Vibes&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/carousel.css" type="text/css" media="all" />
     <!-- //Web-Fonts -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -55,10 +62,12 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="loader" class="studybackground">
-      <img class="study-logo text-center" src="images/WAVCLOUD-ICON.gif"/>
-  </div>
-    <div id="root"></div>
+    
+    <div id="root">
+      <div id="loader" class="studybackground">
+        <img class="study-logo text-center" src="images/WAVCLOUD-ICON.gif"/>
+    </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -69,15 +78,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      const root = document.getElementById("root")
-      const loader = document.getElementById("loader")
-      root.style.display = "none"
-      setTimeout(()=> {
-        root.style.display="block"
-        loader.style.display="none"
-      }, 5000)
-    </script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+    <!-- carousel -->
+<script src="js/bootstrap.js"></script>
+<script src="js/carousel.js"></script>
+
+<!-- //carousel -->
+
+<!-- smooth scrolling -->
+<script src="js/SmoothScroll.min.js"></script>
+<!-- move-top -->
+<script src="js/move-top.js"></script>
+<!-- easing -->
+<script src="js/easing.js"></script>
+<!--  necessary snippets for few javascript files -->
+
+
+
+<script src="js/look.js"></script>
 
 <script>
   $(document).ready(function () {
@@ -107,21 +128,7 @@
 <!-- //fixed nav -->
 <!-- //navigation -->
 
-<!-- carousel -->
-<script src="js/carousel.js"></script>
-<link rel="stylesheet" href="css/carousel.css" type="text/css" media="all" />
-<!-- //carousel -->
 
-<!-- smooth scrolling -->
-<script src="js/SmoothScroll.min.js"></script>
-<!-- move-top -->
-<script src="js/move-top.js"></script>
-<!-- easing -->
-<script src="js/easing.js"></script>
-<!--  necessary snippets for few javascript files -->
-<script src="js/look.js"></script>
-
-<script src="js/bootstrap.js"></script>
 <!-- Necessary-JavaScript-File-For-Bootstrap -->
 <!-- //Js files -->
   </body>

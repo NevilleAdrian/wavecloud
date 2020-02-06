@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from './components/Header'
+import Wavecloud from './components/Wavecloud';
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div class="main-banner-w3ls">
-    <div className="App">
+   <>
       <Header/>
-    </div>
-    </div>
+      <Wavecloud/>
+      <Footer/>
+   </>
   );
 }
 
